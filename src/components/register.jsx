@@ -33,7 +33,7 @@ const Register = () => {
   const onSubmit = (data) => {
     setLoading(true);
     axios
-      .post(`https://main--thebloggiez.netlify.app/api/register`, { ...data })
+      .post(`${process.env.THE_BLOGGIES_BACKEND_URL}/api/register`, { ...data })
       .then(function (response) {
         // handle success
         setLoading(false);
