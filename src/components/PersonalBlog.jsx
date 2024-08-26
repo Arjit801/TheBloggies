@@ -28,7 +28,7 @@ const PersonalBlog = () => {
     setLoading(true);
     axios
       .get(
-        `${process.env.THE_BLOGGIES_BACKEND_URL}/api/unique-blog`,
+        `https://main--thebloggiez.netlify.app/unique-blog`,
 
         {
           withCredentials: true,
@@ -66,7 +66,7 @@ const PersonalBlog = () => {
     setDeleteLoading(true);
     axios
       .delete(
-        `${process.env.THE_BLOGGIES_BACKEND_URL}/api/delete-blog/${blog.id}`,
+        `https://main--thebloggiez.netlify.app/delete-blog/${blog.id}`,
 
         {
           withCredentials: true,
